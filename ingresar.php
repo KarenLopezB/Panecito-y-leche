@@ -8,12 +8,12 @@
     <form action="administrar_registro.php" method="post" > 
         <table>
             <tr>
-                <td>Nombre Libro</td>
+                <td>Nombre personal</td>
                 <td><input type="text" name="nombre"></td>
             </tr>
 
             <tr>
-                <td>Autor</td>
+                <td>Apellido</td>
                 <td><input type="text" name="apellido"></td>
 
             </tr>
@@ -29,28 +29,33 @@
             </tr>
 
             <tr>
-                <td>Lugar de nacimiento</td>
+                <td>Edad</td>
                 <td><input type="text" name="edad"></td>
             </tr>
             
             <tr>
-                <td>Lugar de nacimiento</td>
+                <td>LArea en la que se desarrolla</td>
                 <td><input type="text" name="areadesarrollo"></td>
             </tr>
 
             <tr>
-                <td>Lugar de nacimiento</td>
+                <td>Lugar de residencia actual</td>
                 <td><input type="text" name="residencia"></td>
             </tr>
 
             <tr>
-                <td>Lugar de nacimiento</td>
+                <td>Nivel de estudios</td>
                 <td><input type="text" name="nivelestudios"></td>
             </tr>
 
             <tr>
-                <td>Lugar de nacimiento</td>
+                <td>Codigo personal asignado</td>
                 <td><input type="text" name="codigopersonal"></td>
+            </tr>
+
+            <tr>
+                <td>Innovador o dueño</td>
+                <td><input type="text" name="puesto"></td>
             </tr>
 
             <input type="hidden" name="insertar" value="insertar">

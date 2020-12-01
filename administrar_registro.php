@@ -19,6 +19,7 @@ if (isset($_POST['insertar'])){
     $registro->setResidencia($_POST['residencia']);
     $registro->setNivelEstudios($_POST{'nivelestudios'});
     $registro->setCodigoPersonal($_POST['codigopersonal']);
+    $registro->setPuesto($_POST['puesto']);
     //llama a la funcion insertar definida en el crud si todo se obtuvo correctamente 
     $crud->insertar($registro);
     header('Location: index.php');

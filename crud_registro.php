@@ -9,7 +9,7 @@
         public function insertar($registro){ //recibe parametro libro, de la clase 
             //conectar a la base
             $db=Bd::conectar();
-            $insert =$db->prepare('INSERT INTO registro values(NULL, :Nombre, :Apellido, :FechaRegistro, :Nacimiento, :Edad, :AreaDesarrollo, :Residencia, :NivelEstudios, :CodigoPersonal)');
+            $insert =$db->prepare('INSERT INTO registro values(NULL, :Nombre, :Apellido, :FechaRegistro, :Nacimiento, :Edad, :AreaDesarrollo, :Residencia, :NivelEstudios, :CodigoPersonal, :Puesto)');
             $insert->bindValue('Nombre', $registro->getNombre());
             $insert->bindValue('Apellido', $registro->getApellido());
             $insert->bindValue('FechaRegistro', $registro->getFechaRegistro());
@@ -19,6 +19,7 @@
             $insert->bindValue('Residencia', $registro->getResidencia());
             $insert->bindValue('NivelEstudios', $registro->getNivelEstudios());
             $insert->bindValue('CodigoPersonal', $registro->getCodigoPersonal());
+            $insert->bindValue('Puesto', $registro->getPuesto());
             $insert->execute();
         }
 

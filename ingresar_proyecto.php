@@ -13,6 +13,11 @@
             </tr>
 
             <tr>
+                <td>Descripcion</td>
+                <td><input type="text" name="descripcion"></td>
+            </tr>
+
+            <tr>
                 <td>Fecha de inicio</td>
                 <td><input type="text" name="fechainicio"></td>
 
@@ -24,14 +29,16 @@
             </tr>
 
             <tr>
-                <td>Codigo personal</td>
+                <td>Codigo personal del dueño</td>
                 <td><input type="text" name="codigonombre"></td>
             </tr>
 
             <tr>
-                <td>Descripcion</td>
-                <td><input type="text" name="descripcion"></td>
+                <td>Codigo personal del innovador</td>
+                <td><input type="text" name="codigoinnovador"></td>
             </tr>
+
+            
             
             <input type="hidden" name="insertar" value="insertar">
 

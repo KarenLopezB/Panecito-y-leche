@@ -46,6 +46,13 @@
                  $this->descripcion = $descripcion;
             }
 
+            public function getCodigoInnovador(){
+                return $this->codigoinnovador;
+            }
+            public function setCodigoInnovador($codigoinnovador){
+                 $this->codigoinnovador = $codigoinnovador;
+            }
+
             public function getId(){
                 return $this->id;
             }

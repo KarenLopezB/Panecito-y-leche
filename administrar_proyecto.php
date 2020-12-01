@@ -15,6 +15,7 @@ if (isset($_POST['insertar'])){
     $proyecto->setStatusActual($_POST['statusactual']);
     $proyecto->setCodigoNombre($_POST['codigonombre']);
     $proyecto->setDescripcion($_POST{'descripcion'});
+    $proyecto->setCodigoInnovador($_POST{'codigoinnovador'});
     
     //llama a la funcion insertar definida en el crud si todo se obtuvo correctamente 
     $crud->insertar($proyecto);

@@ -9,12 +9,13 @@
         public function insertar($proyecto){ //recibe parametro libro, de la clase 
             //conectar a la base
             $db=Bd::conectar();
-            $insert =$db->prepare('INSERT INTO proyecto values(NULL, :NombreProyecto, :FechaInicio, :StatusActual, :CodigoNombre, :Descripcion)');
+            $insert =$db->prepare('INSERT INTO proyecto values(NULL, :NombreProyecto, :FechaInicio, :StatusActual, :CodigoNombre, :Descripcion, :CodigoInnovador)');
             $insert->bindValue('NombreProyecto', $proyecto->getNombreProyecto());
             $insert->bindValue('FechaInicio', $proyecto->getFechaInicio());
             $insert->bindValue('StatusActual', $proyecto->getStatusActual());
             $insert->bindValue('CodigoNombre', $proyecto->getCodigoNombre());
-            $insert->bindValue('Descripcion', $proyecto->getDescripcion());            
+            $insert->bindValue('Descripcion', $proyecto->getDescripcion());   
+            $insert->bindValue('CodigoInnovador', $proyecto->getCodigoInnovador());             
             $insert->execute();
         }
 

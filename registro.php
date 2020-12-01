@@ -10,6 +10,7 @@
             private $residencia;
             private $nivelestudios;
             private $codigopersonal;
+            private $puesto;
            
 
             function __constructor(){} 
@@ -77,6 +78,13 @@
             }
             public function setCodigoPersonal($codigopersonal){
                  $this->codigopersonal = $codigopersonal;
+            }
+
+            public function getPuesto(){
+                return $this->puesto;
+            }
+            public function setPuesto($puesto){
+                 $this->puesto = $puesto;
             }
             //posibles minusculas en el id 
 
